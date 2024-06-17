@@ -4,7 +4,7 @@ require_once 'parts/header.php';
 ?>
 
 <h1>Ajouter un nouveau billet</h1>
-<form action="scripts/save-billet.php" method="post">
+<form action="scripts/save_billet.php" method="post">
     <label for="categorie">Catégorie :</label>
     <select id="categorie" name="categorie" required>
         <option value="Hommes">Hommes</option>

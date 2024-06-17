@@ -34,7 +34,7 @@ try {
     <button type="submit">Appliquer</button>
 </form>
 
-<a href="add-billet.php" class="btn btn-primary">Ajouter un nouveau billet</a>
+<a href="add_billet.php" class="btn btn-primary">Ajouter un nouveau billet</a>
 <?php if (!empty($posts)): ?>
     <?php foreach ($posts as $post): ?>
         <div class="billet">
@@ -52,6 +52,7 @@ try {
             <div class="price">
                 <?php echo htmlspecialchars($post['prix']); ?> €
             </div>
+            <a href="edit_billet.php?id=<?php echo $post['id']; ?>" class="btn btn-secondary">Modifier</a>
         </div>
     <?php endforeach; ?>
 <?php else: ?>
